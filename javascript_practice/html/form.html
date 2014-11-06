@@ -1,0 +1,22 @@
+<html>
+ <head>
+  <script type="text/javascript">
+    function addInputField(){
+      console.log("this is working");
+      var inputField = document.getElementById("firstName");
+      var inputElement = document.createElement("input");
+      console.log(inputField);
+      var button = document.getElementById("button");
+      var container = document.getElementById("fieldContainer");
+      console.log(container);
+      container.appendChild(inputElement);
+    }
+  </script>
+ </head>
+ <body>
+    <input type="text"  name="firstname" id="firstName"/>
+    <input type="submit" value="+" id="button" onclick="addInputField();"/>
+    <div id="fieldContainer">
+    </div>
+ </body>
+</html>
